@@ -3,55 +3,139 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Overwhelming Orchestra</title>
+    <title>Den överväldigande orkestern</title>
+    
+    <!-- Koppling till CSS-filen -->
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
 
     <header>
-      <h1>The Overwhelming Orchestra</h1>
-      <p>Click on a button to play an instrument. To turn it off, click again</p>
+      <h1>Den överväldigande orkestern</h1>
+      <p>Klicka på en knapp för att spela ett instrument. För att stänga av, klicka igen.</p>
     </header>
 
     <section class="orchestra">
       <div class="button-container">
-        <!-- Here we have our buttons and audio elements. When you click a button
-          it will call the toggleAudio function (and send the correct instrument as
-          an argument). It will also call the toggleButtonColor function (and send the
-          correct button as argument). The attribute loop is added to each audio element
-          so that it will play endlessley until paused again.  -->
+        <!-- Här är alla knappar och ljud-element. När du klickar på en knapp kallas
+        toggleAudio-funktionen (och skickar med rätt instrument som argument). Även
+        toggleButtonColor-funktionen kallas på (och skickar med rätt knapps id som
+        argument). Attributet "loop" har lagts på varje ljud-element för att ljudet
+        ska spelas i all oändlighet (eller tills någon klickar på knappen igen).-->
 
-        <button id="saxBtn" onclick="toggleAudio(saxophone), toggleButtonColor(saxBtn)">🎷</button>
-        <audio id="saxophone" src="./sounds/saxophone.wav" type="wav" loop></audio>
+        <button
+          id="saxBtn"
+          onclick="toggleAudio(saxophone), toggleButtonColor(saxBtn)">
+          🎷
+        </button>
+        <audio
+          loop
+          id="saxophone"
+          src="./sounds/saxophone.wav"
+          type="wav"
+          >
+        </audio>
 
-        <button id="guitarBtn" onclick="toggleAudio(guitar), toggleButtonColor(guitarBtn)">🎸</button>
-        <audio id="guitar" src="./sounds/guitar.wav" type="wav" loop></audio>
+        <button
+          id="guitarBtn"
+          onclick="toggleAudio(guitar), toggleButtonColor(guitarBtn)">
+          🎸
+        </button>
+        <audio
+          loop
+          id="guitar"
+          src="./sounds/guitar.wav"
+          type="wav">
+        </audio>
 
-        <button id="pianoBtn" onclick="toggleAudio(piano), toggleButtonColor(pianoBtn)">🎹</button>
-        <audio id="piano" src="./sounds/piano.wav" type="wav" loop></audio>
+        <button
+          id="pianoBtn"
+          onclick="toggleAudio(piano), toggleButtonColor(pianoBtn)">
+          🎹
+        </button>
+        <audio
+          loop
+          id="piano"
+          src="./sounds/piano.wav"
+          type="wav">
+        </audio>
 
-        <button id="trumpetBtn" onclick="toggleAudio(trumpet), toggleButtonColor(trumpetBtn)">🎺</button>
-        <audio id="trumpet" src="./sounds/trumpet.wav" type="wav" loop></audio>
+        <button
+          id="trumpetBtn"
+          onclick="toggleAudio(trumpet), toggleButtonColor(trumpetBtn)">
+          🎺
+        </button>
+        <audio
+          loop
+          id="trumpet"
+          src="./sounds/trumpet.wav"
+          type="wav">
+        </audio>
 
-        <button id="violinBtn" onclick="toggleAudio(violin), toggleButtonColor(violinBtn)">🎻</button>
-        <audio id="violin" src="./sounds/violin.wav" type="wav" loop></audio>
+        <button
+          id="violinBtn"
+          onclick="toggleAudio(violin), toggleButtonColor(violinBtn)">
+          🎻
+        </button>
+        <audio
+          loop
+          id="violin"
+          src="./sounds/violin.wav"
+          type="wav">
+        </audio>
 
-        <button id="banjoBtn" onclick="toggleAudio(banjo), toggleButtonColor(banjoBtn)">🪕</button>
-        <audio id="banjo" src="./sounds/banjo.mp3" type="mp3" loop></audio>
+        <button
+          id="banjoBtn"
+          onclick="toggleAudio(banjo), toggleButtonColor(banjoBtn)">
+          🪕
+        </button>
+        <audio
+          loop
+          id="banjo"
+          src="./sounds/banjo.mp3"
+          type="mp3">
+        </audio>
 
-        <button id="drumsBtn" onclick="toggleAudio(drums), toggleButtonColor(drumsBtn)">🥁</button>
-        <audio id="drums" src="./sounds/drums.wav" type="wav" loop></audio>
+        <button
+          id="drumsBtn"
+          onclick="toggleAudio(drums), toggleButtonColor(drumsBtn)">
+          🥁
+        </button>
+        <audio
+          loop
+          id="drums"
+          src="./sounds/drums.wav"
+          type="wav">
+        </audio>
 
-        <button id="voicesBtn" onclick="toggleAudio(voices), toggleButtonColor(voicesBtn)">🎤</button>
-        <audio id="voices" src="./sounds/voices.mp3" type="mp3" loop></audio>
+        <button
+          id="voicesBtn"
+          onclick="toggleAudio(voices), toggleButtonColor(voicesBtn)">
+          🎤
+        </button>
+        <audio
+          loop
+          id="voices"
+          src="./sounds/voices.mp3"
+          type="mp3">
+        </audio>
 
-        <button id="bellBtn" onclick="toggleAudio(bell), toggleButtonColor(bellBtn)">🔔</button>
-        <audio id="bell" src="./sounds/bell.wav" type="wav" loop></audio>
+        <button
+          id="bellBtn"
+          onclick="toggleAudio(bell), toggleButtonColor(bellBtn)">
+          🔔
+        </button>
+        <audio
+          loop
+          id="bell"
+          src="./sounds/bell.wav"
+          type="wav">
+        </audio>
 
       </div>
     </section>
     
-    <!-- Connection with the Javascript file  -->
+    <!-- Koppling till JavaScript-filen  -->
     <script src="./script.js"></script>
 
   </body>

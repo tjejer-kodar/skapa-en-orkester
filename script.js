@@ -1,11 +1,12 @@
-// These functions are called when a button is clicked.
+// Dessa funktioner körs när en knapp blir klickad. Gå in i HTML-filen
+// för att kika hur det hänger ihop!
 
 const toggleAudio = sound => {
-    //Here you write code to toggle whether the audio
-    //is played or paused
+    //Här skriver du kod för att växla mellan att ljudet
+    //spelas eller pausas.
 }
 
 const toggleButtonColor = button => {
-  //Here you write code to toggle the button color
-  //between green and orange
+  //Här skriver du kod för att växla knapp-färgen mellan
+  //grön och orange
 }
