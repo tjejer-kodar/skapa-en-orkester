@@ -1,11 +1,11 @@
-/*Styling for hela sidan*/
+/* Styling for hela sidan */
 body {
   background-color: lightblue;
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Styling för headern  */
+/* Styling för headern */
 header {
   background-color: darkblue;
   padding: 40px;
@@ -13,7 +13,7 @@ header {
   text-align: center;
 }
 
-/*Styling för orkestern*/
+/* Styling för orkestern */
 .orchestra {
   width: 100%;
   padding-top: 40px;
@@ -29,7 +29,7 @@ header {
   justify-content: center;
 }
 
-/*Styling för varje enskild knapp*/
+/* Styling för varje enskild knapp */
 button {
   background-color: orange;
   width: 120px;
@@ -38,4 +38,10 @@ button {
   border-radius: 5%;
   border: 3px solid black;
   font-size: 40px;
+}
+
+/* Här har vi skapat en klass som du kan
+använda dig av för att växla bakgrundsfärgen */
+.green-button {
+  background-color: green;
 }
